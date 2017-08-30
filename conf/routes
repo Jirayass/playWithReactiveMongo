@@ -1,0 +1,9 @@
+POST          /helloword            @controllers.HelloWorldController.create
+
+GET           /helloword/*id        @controllers.HelloWorldController.get(id)
+
+PUT           /helloword/*id        @controllers.HelloWorldController.update(id)
+
+DELETE        /helloword/*id        @controllers.HelloWorldController.delete(id)
+
+GET           /helloword            @controllers.HelloWorldController.search(name:String,cursor:Int ?=1, limit:Int ?= 10)
